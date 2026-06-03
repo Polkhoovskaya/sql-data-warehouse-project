@@ -45,6 +45,9 @@ FROM bronze.erp_loc_a101;
 
 -- Load erp_loc_a101 to silver
 
+PRINT '>> Truncating Table: silver.erp_loc_a101';
+TRUNCATE TABLE silver.erp_loc_a101;
+PRINT '>> Inserting Data Into: silver.erp_loc_a101';
 INSERT INTO silver.erp_loc_a101 (
 	CID, 
 	CNTRY
