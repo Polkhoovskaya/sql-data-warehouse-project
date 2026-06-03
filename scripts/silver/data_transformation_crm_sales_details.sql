@@ -242,7 +242,9 @@ SELECT sls_ord_num
 ---------------------------------------------------------------------------------------------------
 
 -- Load crm_sales_details to silver
-
+PRINT '>> Truncating Table: silver.crm_sales_details';
+TRUNCATE TABLE silver.crm_sales_details;
+PRINT '>> Inserting Data Into: silver.crm_sales_details';
 INSERT INTO silver.crm_sales_details (
 		sls_ord_num
       ,sls_prd_key
