@@ -123,6 +123,9 @@ WHERE TABLE_SCHEMA = 'bronze'
 ---------------------------------------------------------------------------------------------------
 -- Load crm_cust_info to silver
 
+PRINT '>> Truncation Table: silver.crm_cust_info';
+TRUNCATE TABLE silver.crm_cust_info;
+PRINT '>> Inserting Data Into: silver.crm_cust_info';
 INSERT INTO silver.crm_cust_info (
 	cst_id,
 	cst_key,
