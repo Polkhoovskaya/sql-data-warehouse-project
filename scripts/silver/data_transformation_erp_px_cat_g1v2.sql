@@ -43,6 +43,9 @@ FROM bronze.erp_px_cat_g1v2;
 
 -- Load erp_px_cat_g1v2 to silver
 
+PRINT '>> Truncating Table: silver.erp_px_cat_g1v2';
+TRUNCATE TABLE silver.erp_px_cat_g1v2;
+PRINT '>> Inserting Data Into: silver.erp_px_cat_g1v2';
 INSERT INTO silver.erp_px_cat_g1v2 (
     ID,
     CAT,
